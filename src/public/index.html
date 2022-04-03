@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario node-express</title>
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+    <form action="/authenticate" method="POST" enctype="multipart/form-data">
+
+      <h1>Login</h1>
+
+      <div class="section">
+          
+        <div class="tittle">email</div>
+        <div class="field"> <input type="text" id="email" name="email" placeholder="type your email"> </div>
+     
+      </div>
+      <div class="section">
+          
+        <div class="tittle">password</div>
+        <div class="field"> <input type="password" id="password" name="password" placeholder="type your password"> </div>
+     
+      </div>
+      <div class="section">
+          
+        <div class="button"><input type="submit" value="login"></div>
+        <div class="button"> <a href="signup.html"> Registrarse </a></div>
+     
+      </div>
+
+    </form>
+</body>
+</html>
