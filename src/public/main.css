@@ -1,37 +1,168 @@
-*{box-sizing: border-box;}
 
-body{font-family: Arial, Helvetica, sans-serif;}
-form{width: 400px; margin: 0 auto; border: solid 3px #ccc; padding: 20px; }
-
-input[type=text], input[type=password]{
-
-    border: solid 1px #ccc;
-    border-radius: 3px;
-    font-size: 18px;
-    outline: none;
-    padding: 10px;
-    width: 100%;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-input[type=submit] {
-
-    border: 0;
-    background-color: blueviolet;
-    font-size: 18px;
-    outline: 0;
-    color: aliceblue;
-    padding: 10px;
-    border-radius: 3px;
+body {
+  background-image: url('Blue-background-Download-Free-PNG.png');
 }
 
-.section{padding: 15px 0;}
-.section.tittle{padding: 10px 0;}
-
-.button{
-    padding: 10px 0;
-    text-align: center;
+.formulario {
+  width: 400px;
+  background: #24303c;
+  padding: 60px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  font-family: 'calibry';
+  color: white;
+  box-shadow: 7px 13px 27px #000
 }
 
-.button a{
-    color:brown;
+.formulario {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  border: 2px solid  #1f53c5;
+  font-size: 18px;
+  color: orange;
+
+}
+
+.input::placeholder {
+  color: none;
+  font-family: sans-serif;
+}
+
+.formulario h1{
+  color: purple;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formulario a{
+  color: green;
+  margin: 120px;
+  font-size: 22px;
+  text-decoration: none;
+
+}
+
+.formulario a:hover{
+  color: yellow;
+  text-decoration: underline;
+  margin: 120px;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.formulario .button {
+  width: 80%;
+  background-color: #1f53c5;
+  border: 15px;
+  padding: 10px;
+  color: white;
+  margin: 16px 0;
+  font-size: 25PX;
+  margin-left: 35PX;
+  margin-top: 40px;
+  font-style: normal;
+
+}
+
+.formulario .foto{
+  color: #CCCCCC;
+  margin-left: 45px;
+  margin-bottom: 25PX:
+}
+
+.formulario .tittle {
+  color: white;
+  margin-left: 5px;
+  font-size: 20px;
+  font: 'calibry'
+}
+
+.formulario .imagenPreview {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+
+.formulario-login {
+
+  width: 360px;
+  padding: 80px;
+  background-color: #24303c;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-family: 'calibry';
+  color: white;
+  box-shadow: 7px 13px 27px #000
+
+}
+
+.formulario-login{
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.formulario-login h1{
+  color: #3333FF;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: none;
+}
+
+.formulario-login a{
+  color: green;
+  margin: 50px;
+  font-size: 22px;
+  text-decoration: none;
+
+}
+
+.formulario-login a:hover{
+  color: yellow;
+  text-decoration: underline;
+  margin: 45px;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.formulario-login .input-login{
+  width: 100%;
+  background-color: white;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  border: 2px solid  #1f53c5;
+  font-size: 18px;
+  color: #FF6600;
+}
+
+.formulario-login .tittle-login{
+  color: white;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.formulario-login .button-login{
+  background-color: #FFFF99;
+  width: 60%;
+  padding: 3px;
+  font-size: 22px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }

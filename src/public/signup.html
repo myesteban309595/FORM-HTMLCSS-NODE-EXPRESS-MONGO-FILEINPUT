@@ -8,52 +8,75 @@
 
     <link rel="stylesheet" href="main.css">
 
+    <style>
+
+      #imagenPreview{
+        width: 256px;
+        height: 144px;
+        border: dashed 1px crimson;
+      }
+
+      #imagenPreview img{
+        width: 100%;
+      }
+
+    </style>
+
 </head>
 <body>
 
-    <form action="/register" method="POST" enctype="multipart/form-data">
+    <form class="formulario" action="/register" method="POST" enctype="multipart/form-data">
 
-      <h1 style="color: rgb(112, 41, 228)">Registro</h1>
+      <h1>Registro</h1>
 
       <div class="section">
-          
         <div class="tittle">UserName</div>
-        <div class="field"> <input type="text" id="username" name="username" placeholder="type your username" required> </div>
-     
+        <div class="field"> <input class="input" type="text" id="username" name="username" placeholder="type your username" required> </div>
       </div>
+
       <div class="section">
-          
         <div class="tittle">Lastname</div>
-        <div class="field"> <input type="text" id="lastname" name="lastname" placeholder="type your lastname" required> </div>
-     
+        <div class="field"> <input class="input" type="text" id="lastname" name="lastname" placeholder="type your lastname" required> </div>
       </div>
+
       <div class="section">
-          
         <div class="tittle">Email</div>
-        <div class="field"> <input type="text" id="email" name="email" placeholder="type your email@hola.com" required> </div>
-     
+        <div class="field"> <input class="input" type="text" id="email" name="email" placeholder="type your email@hola.com" required> </div>
       </div>
+
       <div class="section">
-          
         <div class="tittle">password</div>
-        <div class="field"> <input type="password" id="password" name="password" placeholder="type your password" required> </div>
-     
+        <div class="field"> <input class="input" type="password" id="password" name="password" placeholder="type your password" required> </div>
       </div>
 
       <div class="section">
-
-        <label style="color:blue" for="foto"><strong>Foto</strong></label>
+        <label  class="foto" for="foto"><strong>Agregar avatar </strong>(Opcional)</label>
         <input type="file" name="foto" id="foto">
-     
+      </div>
+
+      <div class="imagenPreview" id="imagenPreview">
       </div>
 
       <div class="section">
-        
-        <div class="button"><input type="submit" value="registrar" ></div>
-        <div class="button"> <a href="index.html"> Login </a></div>
-     
+        <div><input class="button" type="submit" value="Registrar" ></div>
+        <div class="button-link"> <a href="index.html"> Login </a></div>
       </div>
+
 
     </form>
+
+    <script>
+      $("#imagen").on("change", function(){
+        var imagen = $(this)[0].files[0];
+        var fileReader = new FileReader();
+        fileReader.readAsDataURL(imagen);
+        fileReader.onload = function(){
+          console.log(fileReader.result);
+        }
+      })
+
+    </script>
+
+
 </body>
 </html>
